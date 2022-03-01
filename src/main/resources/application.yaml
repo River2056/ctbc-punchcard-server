@@ -9,9 +9,14 @@ spring:
       show-sql: true
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: abc123
+    # url: jdbc:postgresql://localhost:5432/postgres
+    # username: postgres
+    # password: abc123
+
+    # heroku credentials
+    url: jdbc:postgresql://ec2-44-194-113-156.compute-1.amazonaws.com:5432/ddqpskricrfopa
+    username: xfccxgayixqtbv
+    password: 082dfb7d1a89fd217910dfc00d6ab8eb753887186edd1171cf09a6a583968d83
 
     initialization-mode: always
     initialize: true
