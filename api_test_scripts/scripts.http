@@ -7,3 +7,8 @@ Content-Type: application/json
     "endTime": "2022-03-02 19:00",
     "details": "測試細項"
 }
+
+###
+
+GET http://localhost:8080/work/2022/03 HTTP/1.1
+
