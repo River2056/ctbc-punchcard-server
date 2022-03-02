@@ -19,11 +19,6 @@ public class MainApiController {
     @Autowired
     private WorkDayDetailService workDayDetailService;
 
-    @GetMapping(value = "/")
-    public String test() {
-        return "Hey There!";
-    }
-
     @GetMapping(value = "/work/{year}/{month}")
     public List<WorkDayDetail> getAllWorkDayDetails(@PathVariable("year") String year,
             @PathVariable("month") String month) {
