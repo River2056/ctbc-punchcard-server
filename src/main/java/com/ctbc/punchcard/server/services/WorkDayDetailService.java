@@ -45,4 +45,10 @@ public class WorkDayDetailService {
         }).collect(Collectors.toList());
         return list;
     }
+
+    public WorkDayDetail getWorkDayDetailsByDate(String year, String month, String date) {
+        List<WorkDayDetail> list = this.workDayDetailMapper
+                .findByExactDate(String.format("%s-%s-%s%s", year, month, date, "%"));
+        return list != null && list.size() > 0 ? list.get(0) : null;
+    }
 }
