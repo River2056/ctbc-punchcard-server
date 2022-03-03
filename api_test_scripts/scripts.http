@@ -12,3 +12,22 @@ Content-Type: application/json
 
 GET http://localhost:8080/work/2022/03 HTTP/1.1
 
+###
+
+POST http://localhost:8080/start HTTP/1.1
+Content-Type: application/json
+
+{
+    "ownerId": 1,
+    "startTime": "2022-03-03 09:30"
+}
+
+###
+
+POST http://localhost:8080/end HTTP/1.1
+Content-Type: application/json
+
+{
+    "ownerId": 1,
+    "endTime": "2022-03-03 18:47"
+}
